@@ -1,0 +1,14 @@
+
+<div id="container" style="width: 300px;"> <!-- il <div> "container" ha un dimensione fissa; width: 300px -->
+  <div id="content" style="width:100%; aspect-ratio: 1 / 1;"> <!-- il <div> del content viene impostato con la proprietà css "aspect-ratio" su una dimensione dinamica proporzionale "1 a 1";  il risultato sarà 300px x 300px -->
+    <img id="image" style="cursor: zoom-in; width:100%; height: 100%; object-fit:cover;" src="/image.jpg"> <!-- all'immagine <img> viene richiesto con la proprietà css "object-fit" di coprire l'intera aria di 300x300 riempendola con il valore "cover" -->
+  </div>
+</div>
+
+<!-- UTILIZZO CON SWIPERJS https://swiperjs.com/ -->
+
+<div class="swiper-slide"> <!-- la classe "swiper-slide" ed in particolare swiper stesso, in maniera dinamica e resposive, imposta le dimesioni fisse -->
+  <div style="width:100%; aspect-ratio: 1 / 1;">
+    <img style="cursor: zoom-in; width:100%; height: 100%; object-fit:cover;" src="/image.jpg">
+  </div>
+</div>
